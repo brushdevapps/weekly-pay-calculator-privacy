@@ -1,13 +1,298 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Pay Calculator – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Weekly Pay Calculator (Brush Dev Apps). No data collection, local-only storage, no sharing." />
+
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,0.06);
+      --card2: rgba(255,255,255,0.04);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.68);
+      --border: rgba(255,255,255,0.12);
+      --accent: #7aa2ff;
+      --good: #3ddc97;
+      --warn: #ffd166;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --maxw: 900px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg: #f6f7fb;
+        --card: rgba(0,0,0,0.04);
+        --card2: rgba(0,0,0,0.03);
+        --text: rgba(0,0,0,0.88);
+        --muted: rgba(0,0,0,0.62);
+        --border: rgba(0,0,0,0.10);
+        --shadow: 0 10px 30px rgba(0,0,0,.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(122,162,255,0.25), transparent 55%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(61,220,151,0.18), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    header{
+      padding: 44px 18px 18px;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+    .hero{
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border-radius: var(--radius);
+      padding: 22px 22px;
+      box-shadow: var(--shadow);
+    }
+    h1{
+      margin: 0 0 10px;
+      font-size: clamp(26px, 2.2vw + 18px, 40px);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .meta{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+    }
+    .disclaimer{
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255, 209, 102, 0.10);
+      color: var(--text);
+    }
+    .disclaimer strong{ color: var(--warn); }
+
+    main{
+      padding: 18px 18px 52px;
+    }
+    .card{
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      box-shadow: var(--shadow);
+      margin: 14px 0;
+    }
+    h2{
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    p{ margin: 10px 0; color: var(--text); }
+    ul{ margin: 10px 0 0 20px; color: var(--text); }
+    li{ margin: 6px 0; }
+
+    .tldr{
+      display:grid;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .tldr-item{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(61,220,151,0.08);
+    }
+    .check{
+      flex: 0 0 auto;
+      width: 24px; height: 24px;
+      border-radius: 999px;
+      display:grid; place-items:center;
+      background: rgba(61,220,151,0.25);
+      border: 1px solid rgba(61,220,151,0.35);
+      color: var(--good);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .muted{ color: var(--muted); }
+
+    .contact{
+      display:grid;
+      gap: 10px;
+    }
+    code.inline{
+      font-family: var(--mono);
+      font-size: 0.95em;
+      padding: 1px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.12);
+    }
+    footer{
+      padding: 22px 18px 34px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-inner{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
+
 <body>
-<h1>Privacy Policy</h1>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <h1>Weekly Pay Calculator – Privacy Policy</h1>
 
-<p>This app does not collect or share personal data...</p>
+        <div class="meta">
+          <span class="pill"><strong>Effective date:</strong> 2026-01-20</span>
+          <span class="pill"><strong>App name:</strong> Weekly Pay Calculator</span>
+          <span class="pill"><strong>Developer:</strong> Brush Dev Apps</span>
+        </div>
 
+        <div class="disclaimer">
+          <strong>Not affiliated with FedEx.</strong>
+          This app is an independent, driver-focused tool and is <strong>not affiliated with, endorsed by, or sponsored by FedEx Freight / FedEx</strong>.
+        </div>
+
+        <div class="tldr" aria-label="Quick Summary">
+          <div class="tldr-item"><div class="check">✓</div><div><strong>No data collection:</strong> The app does <strong>not</strong> collect personal data.</div></div>
+          <div class="tldr-item"><div class="check">✓</div><div><strong>No data sharing:</strong> The app does <strong>not</strong> share data with third parties.</div></div>
+          <div class="tldr-item"><div class="check">✓</div><div><strong>Local-only storage:</strong> Entries and settings are stored <strong>only on your device</strong>.</div></div>
+          <div class="tldr-item"><div class="check">✓</div><div><strong>You control deletion:</strong> Delete inside the app (if available), clear app storage, or uninstall.</div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="card" id="collect">
+        <h2>Information We Collect</h2>
+        <p><strong>None.</strong><br/>
+          We do not collect, transmit, or store any personal information on external servers.
+        </p>
+        <p class="muted">This includes (but is not limited to):</p>
+        <ul>
+          <li>Your name, email, phone number</li>
+          <li>Device identifiers</li>
+          <li>Location</li>
+          <li>Contacts</li>
+          <li>Photos/media</li>
+          <li>Usage analytics or advertising identifiers</li>
+        </ul>
+      </section>
+
+      <section class="card" id="local">
+        <h2>Information Stored on Your Device</h2>
+        <p>The app stores certain information <strong>locally on your device</strong> to function, such as:</p>
+        <ul>
+          <li>Wage rates you enter (hourly, mileage, vacation, overtime if enabled)</li>
+          <li>Work entries you save (miles, hours, task counts, totals)</li>
+          <li>App preferences (theme mode, etc.)</li>
+          <li>Optional app lock configuration (PIN/biometric preference)</li>
+        </ul>
+        <p class="muted">This data stays on your device and is not sent anywhere by the app.</p>
+      </section>
+
+      <section class="card" id="third-party">
+        <h2>Third-Party Services</h2>
+        <p>
+          This app does <strong>not</strong> use third-party analytics, advertising SDKs, or external tracking services.
+        </p>
+        <p class="muted">
+          If you download the app from Google Play, Google may collect data according to Google Play Services policies.
+          The app itself does not send your data to us.
+        </p>
+      </section>
+
+      <section class="card" id="security">
+        <h2>Security</h2>
+        <p>Because all data is stored locally:</p>
+        <ul>
+          <li>Your privacy is primarily protected by your device’s security (screen lock, OS protections).</li>
+          <li>If you enable the app’s optional lock (PIN/biometric), it adds another layer of protection inside the app.</li>
+        </ul>
+        <p class="muted">
+          No method of storage is 100% secure, but we aim to minimize risk by not transmitting your data.
+        </p>
+      </section>
+
+      <section class="card" id="deletion">
+        <h2>Data Deletion</h2>
+        <p>You can delete your data at any time by:</p>
+        <ol>
+          <li>Using in-app delete controls (if available), <strong>or</strong></li>
+          <li>Clearing the app’s storage in Android settings:<br/>
+            <span class="muted">Settings → Apps → Weekly Pay Calculator → Storage → Clear storage</span>, <strong>or</strong>
+          </li>
+          <li>Uninstalling the app.</li>
+        </ol>
+      </section>
+
+      <section class="card" id="children">
+        <h2>Children’s Privacy</h2>
+        <p>
+          This app is not intended for children under 13. We do not knowingly collect data from children.
+        </p>
+      </section>
+
+      <section class="card" id="changes">
+        <h2>Changes to This Policy</h2>
+        <p>
+          If the app changes in a way that affects privacy, we will update this policy and revise the “Effective date” above.
+        </p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <p>If you have questions about this privacy policy, you may contact the developer via the app’s Google Play listing.</p>
+          <p class="muted">Or open an issue on this repository (if enabled).</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="wrap">
+        <p>
+          © 2026 Brush Dev Apps • Weekly Pay Calculator Privacy Policy
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
