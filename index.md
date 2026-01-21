@@ -67,4 +67,26 @@ No method of storage is 100% secure, but we aim to minimize risk by not transmit
 
 You can delete your data at any time by:
 1. Using in-app delete controls (if available), **or**
-2. Clearing the
+2. Clearing the app’s storage in Android settings:  
+   **Settings → Apps → Weekly Pay Calculator → Storage → Clear storage**, **or**
+3. Uninstalling the app.
+
+---
+
+## Children’s Privacy
+
+This app is not intended for children under 13. We do not knowingly collect data from children.
+
+---
+
+## Changes to This Policy
+
+If the app changes in a way that affects privacy, we will update this policy and revise the “Effective date” above.
+
+---
+
+## Contact
+
+If you have questions about this privacy policy, you may contact the developer via the app’s Google Play listing.
+
+---
